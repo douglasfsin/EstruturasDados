@@ -35,7 +35,12 @@ namespace ED.Fila
 
         public void MostrarFila()
         {
-            throw new NotImplementedException();
+            Console.Write("Senha na Fila de Atendimento:");
+            foreach (var senha in _fila)
+            {
+                Console.Write($"{senha} ");
+            }
+            Console.WriteLine();
         }
 
         public void ReiniciarFila()
