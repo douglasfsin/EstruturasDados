@@ -15,9 +15,12 @@ namespace ED.Fila
     public class FilaAtendimento : IFilaAtendimento
     {
         private Queue<int> _fila;
-        private int Proximo = 1;
+        private int _proximoNumero = 1;
         
-        
+        public FilaAtendimento(){
+            _fila = new Queue<int>();
+        }
+
         public void ChamarProximaSenha()
         {
             throw new NotImplementedException();
@@ -25,7 +28,9 @@ namespace ED.Fila
 
         public int GerarNovaSenha()
         {
-            throw new NotImplementedException();
+            _fila.Enqueue(_proximoNumero);
+            Console.WriteLine("Senha gerada");
+            return _proximoNumero++;
         }
 
         public void MostrarFila()
