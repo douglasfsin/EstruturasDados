@@ -23,7 +23,8 @@ namespace ED.Fila
 
         public void ChamarProximaSenha()
         {
-            throw new NotImplementedException();
+            var proximaSenha = _fila.Dequeue();
+            Console.WriteLine($"Proxima senha: {proximaSenha}");
         }
 
         public int GerarNovaSenha()
@@ -45,7 +46,7 @@ namespace ED.Fila
 
         public void ReiniciarFila()
         {
-            throw new NotImplementedException();
+            _fila.Clear();
         }
     }
 

@@ -18,7 +18,6 @@ class Program
 
         filaAtendimento.GerarNovaSenha();
         filaAtendimento.ChamarProximaSenha();
-        filaAtendimento.ChamarProximaSenha();
         filaAtendimento.MostrarFila();
 
         Console.ReadLine();
